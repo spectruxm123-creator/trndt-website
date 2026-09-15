@@ -1,2 +1,2 @@
 # trndt-website
-Official Trendt (TRNDT) website
+Official Trendt [TRNDT] website
