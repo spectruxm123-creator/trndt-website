@@ -160,3 +160,36 @@ footer { text-align: center; padding: 50px 20px; border-top: 1px solid #1a1a2e; 
     .section h2 { font-size: 24px; }
     .features, .mint-info, .ecosystem-grid, .listings-grid { grid-template-columns: 1fr; }
 }
+
+.creator-title {
+    color: #7c5cff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.creator-socials {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0 16px;
+    flex-wrap: wrap;
+}
+
+.creator-social-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #13131f;
+    border: 1px solid #7c5cff;
+    border-radius: 8px;
+    color: #7c5cff;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.25s;
+}
+
+.creator-social-link:hover {
+    background: linear-gradient(135deg, #7c5cff, #5a3fe8);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
