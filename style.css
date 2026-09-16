@@ -114,7 +114,7 @@ a:hover { color: #9d85ff; }
 /* CREATOR */
 .creator-card { display: flex; align-items: center; gap: 28px; background: linear-gradient(135deg, #13131f 0%, #1a1440 100%); padding: 32px; border-radius: 16px; border: 1px solid #2a2a4a; margin-top: 30px; transition: border-color 0.3s; }
 .creator-card:hover { border-color: #7c5cff; }
-.creator-avatar img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid #7c5cff; box-shadow: 0 0 40px rgba(124, 92, 255, 0.4); flex-shrink: 0; }
+.creator-avatar img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid #7c5cff; box-shadow: 0 0 40px rgba(124, 92, 255, 0.4); flex-shrink: 0; object-fit: contain; background: #0a0a12; padding: 8x; }
 .creator-info h3 { font-size: 22px; color: #ffffff; margin-bottom: 12px; }
 .creator-desc { color: #c0c0d8; font-size: 15px; margin: 0; line-height: 1.6; }
 .creator-ai { display: inline-block; margin-top: 14px; padding: 8px 16px; background: linear-gradient(135deg, #7c5cff 0%, #5a3fe8 100%); color: #ffffff; font-size: 13px; font-weight: 600; border-radius: 20px; letter-spacing: 0.5px; box-shadow: 0 4px 20px rgba(124, 92, 255, 0.4); }
