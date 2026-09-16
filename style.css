@@ -401,37 +401,37 @@ a:hover {
 /* Main promo video */
 .promo-video-wrapper {
     margin-bottom: 60px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 .promo-video {
     width: 100%;
+    max-width: 640px;
     aspect-ratio: 16 / 9;
     border-radius: 14px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
     background: #000;
     object-fit: cover;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Grouped videos */
 .video-gallery {
     margin-top: 20px;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Featured video (video1) — full width on top */
+/* Featured video (video1) — on top */
 .video-feature {
     width: 100%;
+    max-width: 640px;
     aspect-ratio: 16 / 9;
     border-radius: 14px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
     background: #000;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
     object-fit: cover;
+    display: block;
 }
 
 /* Two smaller videos side-by-side */
@@ -439,6 +439,8 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 .video-row video {
@@ -448,6 +450,7 @@ a:hover {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     background: #000;
     object-fit: cover;
+    display: block;
 }
 
 /* =============================================
