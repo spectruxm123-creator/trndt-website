@@ -50,10 +50,10 @@ a:hover {
    ============================================= */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 18px 40px;
-    background: rgba(10, 10, 18, 0.95);
+    padding: 15px 20px;
+    background: rgba(10, 10, 18, 0.8);
     backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
