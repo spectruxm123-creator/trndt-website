@@ -3,9 +3,9 @@
    ================================================== */
 .top-banner {
     width: 100%;
-    height: 200px; /* Adjust this height to make the banner taller or shorter */
+    height: 120px; /* Adjust this height to make the banner taller or shorter */
     background-image: url('media/banner.jpg'); /* IMPORTANT: Upload your banner image to the 'media' folder with this exact name */
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #1a0b2e; /* Fallback dark purple color if the image fails to load */
