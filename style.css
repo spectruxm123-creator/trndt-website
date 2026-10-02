@@ -154,18 +154,17 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px; /* Space between token and planet */
+  gap: 60px;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
-/* --- TRNDT TOKEN WITH SHINING STARS --- */
+/* --- TRNDT TOKEN WITH SHINING STARS (Size unchanged) --- */
 .token-stars-wrapper {
   position: relative;
-  width: 180px;       /* Adjust size as needed */
-  height: 180px;      /* Must be equal to width */
+  width: 180px;       /* SAME SIZE AS BEFORE */
+  height: 180px;      /* SAME SIZE AS BEFORE */
   border-radius: 50%;
-  /* Soft purple glow behind the token */
   box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); 
 }
 
@@ -179,28 +178,38 @@ a:hover {
   display: block;
 }
 
-/* --- SHINING STARS --- */
+/* --- SHINING STAR SHAPES (Not circles) --- */
 .star {
   position: absolute;
   background: #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #ffffff, 0 0 20px rgba(139, 92, 246, 0.8);
-  animation: twinkle 2s infinite ease-in-out;
+  /* Creates a 4-point star shape */
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    100% 50%, 
+    61% 65%, 
+    50% 100%, 
+    39% 65%, 
+    0% 50%, 
+    39% 35%
+  );
+  filter: drop-shadow(0 0 6px #ffffff) drop-shadow(0 0 12px rgba(139, 92, 246, 0.9));
+  animation: twinkle 2.5s infinite ease-in-out;
   z-index: 3;
 }
 
 /* Positioning and sizing individual stars */
-.star-1 { width: 6px; height: 6px; top: -10px; left: 50%; animation-delay: 0s; }
-.star-2 { width: 4px; height: 4px; top: 20%; right: -15px; animation-delay: 0.3s; }
-.star-3 { width: 8px; height: 8px; bottom: -5px; left: 20%; animation-delay: 0.6s; }
-.star-4 { width: 5px; height: 5px; top: 60%; left: -20px; animation-delay: 0.9s; }
-.star-5 { width: 4px; height: 4px; bottom: 10%; right: -10px; animation-delay: 1.2s; }
-.star-6 { width: 7px; height: 7px; top: -15px; left: 20%; animation-delay: 1.5s; }
+.star-1 { width: 12px; height: 12px; top: -15px; left: 50%; animation-delay: 0s; }
+.star-2 { width: 8px;  height: 8px;  top: 20%; right: -20px; animation-delay: 0.4s; }
+.star-3 { width: 16px; height: 16px; bottom: -10px; left: 20%; animation-delay: 0.8s; }
+.star-4 { width: 10px; height: 10px; top: 60%; left: -25px; animation-delay: 1.2s; }
+.star-5 { width: 9px;  height: 9px;  bottom: 10%; right: -15px; animation-delay: 1.6s; }
+.star-6 { width: 14px; height: 14px; top: -20px; left: 15%; animation-delay: 2.0s; }
 
 
-/* --- ROTATING PLANET --- */
+/* --- ROTATING PLANET (West to East) --- */
 .planet-wrapper {
-  width: 140px;       /* Slightly smaller than the token */
+  width: 140px;
   height: 140px;
   border-radius: 50%;
   overflow: hidden;
@@ -212,8 +221,36 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Rotating the planet image */
-  animation: spin-planet 10s linear infinite;
+  /* Rotates West to East (left to right) */
+  animation: spin-planet 20s linear infinite;
+}
+
+/* ============================================ */
+/* KEYFRAME ANIMATIONS                          */
+/* ============================================ */
+
+/* Twinkling star effect */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.7) rotate(0deg); }
+  50%      { opacity: 1; transform: scale(1.2) rotate(180deg); }
+}
+
+/* Planet spins West to East (positive rotation) */
+@keyframes spin-planet {
+  0%   { transform: rotate(0deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1.1); }
+}
+
+/* Makes the planet float up and down gently */
+@keyframes float-planet {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-15px); }
+}
+
+/* Center alignment for text below */
+.hero h1, .hero .tagline, .hero .hero-buttons {
+  text-align: center;
+  width: 100%;
 }
 
 /* ============================================ */
