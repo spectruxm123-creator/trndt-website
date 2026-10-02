@@ -154,7 +154,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 45px;
+  gap: 55px;
   margin-bottom: 30px;
 }
 
@@ -199,12 +199,12 @@ a:hover {
 }
 
 /* Positioning and sizing individual stars */
-.star-1 { width: 12px; height: 12px; top: -15px; left: 50%; animation-delay: 0s; }
+.star-1 { width: 11px; height: 11px; top: -15px; left: 50%; animation-delay: 0s; }
 .star-2 { width: 8px;  height: 8px;  top: 20%; right: -20px; animation-delay: 0.4s; }
-.star-3 { width: 16px; height: 16px; bottom: -10px; left: 20%; animation-delay: 0.8s; }
+.star-3 { width: 14px; height: 14px; bottom: -10px; left: 20%; animation-delay: 0.8s; }
 .star-4 { width: 10px; height: 10px; top: 60%; left: -25px; animation-delay: 1.2s; }
 .star-5 { width: 9px;  height: 9px;  bottom: 10%; right: -15px; animation-delay: 1.6s; }
-.star-6 { width: 14px; height: 14px; top: -20px; left: 15%; animation-delay: 2.0s; }
+.star-6 { width: 12px; height: 12px; top: -20px; left: 15%; animation-delay: 2.0s; }
 
 
 /* --- ROTATING PLANET (West to East) --- */
