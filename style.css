@@ -161,8 +161,8 @@ a:hover {
 /* --- TRNDT TOKEN WITH SHINING STARS (Size unchanged) --- */
 .token-stars-wrapper {
   position: relative;
-  width: 50px;       /* SAME SIZE AS BEFORE */
-  height: 50px;      /* SAME SIZE AS BEFORE */
+  width: 80px;       /* SAME SIZE AS BEFORE */
+  height: 80px;      /* SAME SIZE AS BEFORE */
   border-radius: 50%;
   box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); 
   flex-shrink: 0;
@@ -223,7 +223,7 @@ a:hover {
   height: 100%;
   object-fit: cover;
   /* Rotates West to East (left to right) */
-  animation: spin-planet 60s linear infinite;
+  animation: spin-planet 80s linear infinite;
 }
 
 /* ============================================ */
