@@ -209,8 +209,8 @@ a:hover {
 
 /* --- ROTATING PLANET (West to East) --- */
 .planet-wrapper {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(100, 100, 255, 0.5);
@@ -223,7 +223,7 @@ a:hover {
   height: 100%;
   object-fit: cover;
   /* Rotates West to East (left to right) */
-  animation: spin-planet 80s linear infinite;
+  animation: spin-planet 120s linear infinite;
 }
 
 /* ============================================ */
