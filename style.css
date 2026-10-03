@@ -604,6 +604,31 @@ a:hover {
     display: block;
 }
 
+/* ============================================ */
+/* SHORTS VIDEO PLAYER (1:1 SQUARE)             */
+/* ============================================ */
+
+.video-shorts {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto 0;
+  padding-bottom: 100%; /* 1:1 Square aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.3);
+}
+
+.video-shorts iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* =============================================
    TOKENOMICS
    ============================================= */
