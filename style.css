@@ -282,6 +282,38 @@ a:hover {
   width: 100%;
 }
 
+/* ============================================ */
+/* MUSIC PLAYER STYLES                          */
+/* ============================================ */
+
+/* Hide the default audio player */
+#background-music {
+  display: none;
+}
+
+/* Floating Music Toggle Button */
+.music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.8);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 999;
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+}
+
+.music-toggle:hover {
+  transform: scale(1.1);
+  background: #8B5CF6;
+}
+
 /* =============================================
    BUTTONS
    ============================================= */
