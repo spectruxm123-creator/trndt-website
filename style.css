@@ -1042,14 +1042,5 @@ code,
   border-radius: 8px;
   display: inline-block;
   margin-top: 10px;
-  word-break: break-all; /* Prevents long addresses from overflowing on mobile */
-}
-
-.contract-address a {
-  color: #8B5CF6;
-  text-decoration: none;
-}
-
-.contract-address a:hover {
-  text-decoration: underline;
+  word-break: break-all;
 }
