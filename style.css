@@ -994,3 +994,40 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================ */
+/* TRNDT TYPOGRAPHY UPDATE                      */
+/* ============================================ */
+
+/* 2. HEADER / NAVIGATION (Medium, tracked out) */
+nav a, 
+.header-logo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* 3. HERO HEADLINE (Extra Bold) */
+.hero h1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* 4. BODY PARAGRAPHS (Regular) */
+.hero .tagline, 
+p, 
+.about p, 
+.ecosystem p {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* 5. TRANSACTION / PROTOCOL DATA (Space Mono) */
+.contract-address, 
+code, 
+.protocol-data {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
