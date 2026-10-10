@@ -1031,3 +1031,25 @@ code,
   font-weight: 400;
   letter-spacing: 0.02em;
 }
+
+/* Contract Address Style (Space Mono) */
+.contract-address {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  color: #8B5CF6;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  word-break: break-all; /* Prevents long addresses from overflowing on mobile */
+}
+
+.contract-address a {
+  color: #8B5CF6;
+  text-decoration: none;
+}
+
+.contract-address a:hover {
+  text-decoration: underline;
+}
