@@ -636,6 +636,30 @@ a:hover {
     display: block;
 }
 
+/* ==================================================
+   16:9 YOUTUBE VIDEO CONTAINER
+   ================================================== */
+.video-container-16-9 {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Optional: Stops the video from getting too huge on desktop */
+    margin: 40px auto; /* Centers the video and adds space above/below */
+    padding-bottom: 56.25%; /* This mathematical ratio forces the 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px; /* Optional: Rounds the corners to match modern design */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Optional: Adds a nice shadow */
+}
+
+.video-container-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* ============================================ */
 /* SHORTS VIDEO PLAYER (1:1 SQUARE)             */
 /* ============================================ */
