@@ -660,9 +660,16 @@ a:hover {
     border: none;
 }
 
-
-
-
+/* ==================================================
+   WATCH SECTION TITLE FIX
+   ================================================== */
+.watch-title {
+    font-size: 16px !important; /* Adjust this number to match Birdeye exactly */
+    font-weight: bold !important;
+    color: #7c5cff !important; 
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
 
 /* ============================================ */
 /* SHORTS VIDEO PLAYER (1:1 SQUARE)             */
