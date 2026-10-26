@@ -668,7 +668,7 @@ a:hover {
 .watch-section-title, 
 .video-subtitle { 
     /* If your title doesn't have a class, you might need to use the tag name like h2 or h3 */
-    font-size: 20px; /* Adjust this number to perfectly match 'Birdeye' */
+    font-size: 16px; /* Adjust this number to perfectly match 'Birdeye' */
     font-weight: bold; /* Assuming Birdeye is bold */
     color: #7c5cff; /* Using the purple color from the screenshot */
     margin-bottom: 15px; /* Adds a little space below the title */
