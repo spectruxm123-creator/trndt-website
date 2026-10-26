@@ -664,7 +664,7 @@ a:hover {
    WATCH SECTION TITLE FIX
    ================================================== */
 .watch-title {
-    font-size: 16px !important; /* Adjust this number to match Birdeye exactly */
+    font-size: 12px !important; /* Adjust this number to match Birdeye exactly */
     font-weight: bold !important;
     color: #7c5cff !important; 
     text-align: center !important;
